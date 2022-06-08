@@ -33,4 +33,5 @@ Route::middleware('auth')
 //da mettere in fondo al file web.php
 Route::get("{any?}",function(){
     return view('guest.home');
+    //return view('layouts.front-app');
 })->where("any",".*");
