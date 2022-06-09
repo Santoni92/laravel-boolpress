@@ -4,7 +4,8 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import HomeComponent from './pages/HomeComponent'
+import HomeComponent from './pages/HomeComponent';
+import ContactsComponent from './pages/ContactsComponent';
 const router = new VueRouter({
     mode:'history',
     route:[ //array di rotte
@@ -12,6 +13,11 @@ const router = new VueRouter({
             path:'/',
             name:'home',
             component:HomeComponent
+        },
+        {
+            path:'/contacts',
+            name:'contacts',
+            component:ContactsComponent
         }
     ]
 })
