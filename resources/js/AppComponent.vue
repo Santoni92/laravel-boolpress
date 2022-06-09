@@ -1,5 +1,8 @@
 <template>
-  <div>work in progress</div>
+<div><!-- ricorda di wrappare tutto in un div -->
+    <div>work in progress</div>
+    <router-view></router-view>
+</div>
 </template>
 
 <script>
