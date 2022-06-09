@@ -47,9 +47,9 @@ axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
 
 
 //AppComponent = require("./app/AppComponent.vue").default
-//import AppComponent from './app/AppComponent'
+import AppComponent from './AppComponent'
 const app = new Vue({
     el: '#app',
 
-   // render: (createComponent) => createComponent(AppComponent)
+    render: (createComponent) => createComponent(AppComponent)
 });
