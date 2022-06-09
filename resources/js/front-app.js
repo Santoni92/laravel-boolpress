@@ -12,6 +12,7 @@ window.Vue = require('vue');
 
 
 window.axios = require('axios');
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
     console.log(response);
 }).catch(error=>{
@@ -46,9 +47,9 @@ axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
 
 
 //AppComponent = require("./app/AppComponent.vue").default
-import AppComponent from './app/AppComponent'
+//import AppComponent from './app/AppComponent'
 const app = new Vue({
     el: '#app',
 
-    render: (createComponent) => createComponent(AppComponent)
+   // render: (createComponent) => createComponent(AppComponent)
 });
