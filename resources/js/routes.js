@@ -8,7 +8,7 @@ import HomeComponent from './pages/HomeComponent';
 import ContactsComponent from './pages/ContactsComponent';
 const router = new VueRouter({
     mode:'history',
-    route:[ //array di rotte
+    routes:[ //array di rotte
         {
             path:'/',
             name:'home',
