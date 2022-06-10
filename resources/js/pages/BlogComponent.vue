@@ -1,16 +1,28 @@
 <template>
   <div class="container">
       <div class="row">
+
           <div class="col-12  text-center">
-              My Blog
+              My Posts
           </div>
-      </div>
-  </div>
+
+          <div v-if="posts.lenght > 0">
+            <PostCardListComponent :posts="posts"/>
+          </div>
+
+          <div v-else>Caricamento in corso</div>
+
+        </div>
+    </div>
 </template>
 
 <script>
+import PostCardListComponent from '../components/PostCardListComponent'
 export default {
     name:'BlogComponent',
+    components:{
+        PostCardListComponent
+    },
     data(){
         return {
             posts: []
