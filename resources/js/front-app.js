@@ -14,11 +14,11 @@ window.Vue = require('vue');
 window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
+/*axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
     console.log(response);
 }).catch(error=>{
     console.log(error);
-})
+})*/
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

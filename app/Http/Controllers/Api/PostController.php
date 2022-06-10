@@ -18,7 +18,7 @@ class PostController extends Controller
         //
         $posts = Post::all();
         //$posts = Post::paginate(1);
-        $result = ['result'=>$posts,'success'=>true];   //per dare qualche informazione in più a chi riceve il risultato della chiamata api
+        $result = ['results'=>$posts,'success'=>true];   //per dare qualche informazione in più a chi riceve il risultato della chiamata api
         //return response()->json($posts);
         return response()->json($result);
     }
