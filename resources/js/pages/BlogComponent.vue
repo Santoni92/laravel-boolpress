@@ -6,7 +6,7 @@
               My Posts
           </div>
 
-          <div v-if="posts.lenght > 0">
+          <div v-if="posts.lenght>0">
             <PostCardListComponent :posts="posts"/>
           </div>
 
@@ -28,8 +28,8 @@ export default {
             posts: []
         }
     },
-    mounted(){
-        axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
+    mounted(){  //oppure created()
+        window.axios.get('http://127.0.0.1:8000/api/posts').then( (response)=>{
             console.log(response);
 
             if(response.status === 200 && response.data.success)

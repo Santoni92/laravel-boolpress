@@ -53,6 +53,6 @@ import router from './routes'
 const app = new Vue({
     el: '#app',
 
-    render: (createComponent)=>createComponent(AppComponent),
-    router
+    render: (createComponent)=>createComponent(AppComponent),   //serve per renderizzare il componente che passiamo alla funzione nel div con id="#app"
+    router  //gli passo il file delle rotte vue
 });
